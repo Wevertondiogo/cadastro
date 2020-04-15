@@ -1,0 +1,224 @@
+.footer
+{
+   margin-top: 120px;
+   height: 100px;
+   background-color: $secondMainColor;
+//   @extend %d-evenly;
+//   align-items: center;
+
+// .spin
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorOne);
+//   animation: spin 2s linear infinite;
+// }
+// @keyframes spin{
+//   from{
+//     transform: rotate(0deg);
+//     filter:hue-rotate(0deg);
+//   }
+//   to{
+//     transform: rotate(360deg);
+//     filter: hue-rotate(360deg);
+//   }
+// }
+// .spin::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $gift;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorOne);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+// .spin--two
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorTwo);
+//   animation: spin 2s linear infinite;
+// }
+
+// .spin--two::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $balance-scale;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin--two::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorTwo);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+// .spin--three
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorThree);
+//   animation: spin 2s linear infinite;
+// }
+// .spin--three::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $female;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin--three::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$shadowColorThree);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+// .spin--four
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$gift);
+//   animation: spin 2s linear infinite;
+// }
+// .spin--four::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $shadowColorOne;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin--four::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$gift);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+// .spin--five
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$balance-scale);
+//   animation: spin 2s linear infinite;
+// }
+// .spin--five::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $shadowColorTwo;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin--five::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$balance-scale);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+// .spin--six
+// {
+//   position: relative;
+//   width: 70px;
+//   height: 70%;
+//   border-radius: 50%;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$female);
+//   animation: spin 2s linear infinite;
+// }
+// .spin--six::before{
+//   content: '';
+//   position: absolute;
+//   top: 6px;
+//   left: 6px;
+//   right: 6px;
+//   bottom: 6px;
+//   background: $shadowColorThree;
+//   border-radius: 50%;
+//   z-index: 1000;
+// }
+// .spin--six::after{
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   background: linear-gradient(45deg,transparent, transparent 40%,$female);
+//   border-radius: 50%;
+//   z-index: 1000;
+//   filter: blur(40px);
+
+// }
+
+}

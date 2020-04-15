@@ -1,0 +1,186 @@
+@media (max-width:1000px){
+    .navbar
+    {
+      width: 100% !important;
+      .nav-item
+      {
+        padding: 0 15px !important;
+      }
+
+      .button
+      {
+        padding: 0 0 !important;
+        width: 100px;
+      }
+    }
+  .text--content
+  {
+  &__text
+  {
+    letter-spacing: 1px !important;
+  }
+
+  }
+    .card
+    {
+      width: 300px !important;
+      height: 200px !important;
+    }
+}
+@media (min-width:718px)and (max-width:957px) 
+{
+  .navbar
+  {
+    float: none !important;
+    margin: 0 auto;
+    width: 90% !important;
+    &-nav
+    {
+      height: 100%;
+    }
+    .nav-item
+    {
+      padding: 38px 0 !important;
+      margin: 7px auto !important;
+      .nav-link
+      {
+        font-size: 18px;
+      }
+    }
+    .button
+    {
+      margin: 7px auto !important;
+      font-size: 18px;
+    }
+
+  }
+  .text--content
+  {
+    &__name
+    {
+      font-size: 30px;
+    }
+  &__text
+  {
+    letter-spacing: 1px !important;
+    font-size: 18px;
+  }
+
+  }
+  .card
+    {
+      width: 175px !important;
+      height: 150px !important;
+      margin: 0 5px;
+    }
+  .grid
+  {
+    height: 450px !important;
+    padding: 0 30px;
+      .h1
+      {
+        font-size: 32px;
+      }
+      #question
+      {
+        font-size: 25px !important;
+      }
+  }
+    
+}
+@media (min-width:478px) and (max-width:574px) {
+  .link--group
+  {
+    margin: 0 10px !important;
+
+    &__list__item
+    {
+      width: 48px !important;
+      display: flex !important;
+      align-items: center !important;
+      &__link
+      {
+        font-size: 10px;
+      }
+
+    }
+    
+  }
+  .return
+  {
+    margin-right: 85px !important;
+       .link--group__list
+       {
+         width: 48px !important;
+         &__item__link
+         {
+           font-size: 10px;
+         }
+       }
+  }
+  .text--content
+  {
+    width: 215px;
+    &__welcome
+    {
+      font-size: 15px;
+    }
+
+    &__name
+    {
+      font-size: 16px !important;
+    }
+  &__text
+  {
+    letter-spacing: 1px !important;
+    font-size: 12px;
+      line-height: 20px !important;
+
+  }
+
+  .second--button
+  {
+    width: 100px !important;
+    font-size: 10px !important;
+  }
+
+}
+.card
+    {
+      width: 145px !important;
+      height: 125px !important;
+      margin: 0 5px;
+    }
+    .grid
+  {
+    height: 450px !important;
+    padding: 0 30px;
+      .h1
+      {
+        font-size: 24px;
+      }
+      #question
+      {
+        font-size: 17px !important;
+      }
+     .btn
+     {
+       font-size: 13px !important;
+     }
+     #progress
+     {
+       font-size: 13px !important;
+     } 
+  }
+  .spin
+  {
+     width: 50px !important;
+      height: 50% !important;
+    ~div
+    {
+      width: 50px !important;
+      height: 50% !important;
+    }
+
+  }
+}

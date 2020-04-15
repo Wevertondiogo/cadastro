@@ -1,0 +1,219 @@
+
+.header
+{
+
+  .navigation
+  {
+    height: 50px;
+    .container-fluid
+    {display: flex;
+      justify-content: space-between;
+      .link--group
+      {
+        margin-left: 50px;
+        &__list
+        {
+          @extend %d-evenly;
+          align-items: center;
+          height: 50px;
+          &__item
+          {
+      width: 70px;
+      @extend %d-around;
+      
+      &:hover .fa 
+      {
+        color: $titleColor;
+      }
+      &__link
+      {
+        &:hover
+        {
+          text-decoration: none;
+          color: $titleColor;
+        }
+      }
+    }
+      .fa
+      {
+        color: $textColor;
+        margin-right: 2px;
+      }
+      .vertical--line
+      {
+        height: 20px;
+        width: 2px;
+        background-color: $textColor;
+      }
+    }
+  }
+  .return
+  {
+    @extend %d-center;
+    margin-right: 50px;
+    
+    &-for-window
+    {
+     @extend %d-center;
+     .link--group__list
+     {
+       width: 50%;
+       &__item
+       {
+         width: 35px;
+         &__link
+         {
+           text-align: center;
+         }
+       }
+     }
+    }
+    .modal-content
+    {
+      background-color: $secondMainColor;
+    }
+  }
+  }
+}
+.navigator--bar
+{
+  .navbar
+  {
+    float: right;
+    width: 95%;
+    background-color: $secondMainColor;
+    &-brand
+    {
+      display: flex;
+      .span
+      {
+      text-transform: uppercase;
+      color: $titleColor;
+      padding: 0 .5px;
+      font: {
+        size: larger;
+        weight: bold;
+      }
+      }
+      .active--span
+      {
+        text-transform: uppercase;
+        color: $subTextColor;
+        padding: 0 .5px;
+        font: {
+        size: larger;
+        weight: bold;
+      }
+      }
+    }
+    &-nav
+    {
+      min-height: 50px;
+      width: 100%;
+      @extend %d-center;
+      .nav-item
+      {
+        @extend %d-center;
+        height: 50px;
+        position: relative;
+        padding: 0 30px;
+        margin: 0 5px;
+        &.active
+        {
+          color: $linkActive;
+          border-top: 3px solid $liActiceColor;
+          border-bottom: 3px solid $liActiceColor;
+         &::before
+         {
+           
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          width: 7px;
+          height: 7px;
+          transform: translateX(-50%) rotate(225deg);
+          border-top: 2px solid $liActiceColor;          
+          border-left: 2px solid $liActiceColor;
+         }
+         &::after
+         {
+           content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          width: 7px;
+          height: 7px;
+          transform: translateX(-50%) rotate(2205deg);
+          border-top: 2px solid $liActiceColor;          
+          border-left: 2px solid $liActiceColor;
+         }
+        }
+        &:hover
+        {
+          color: $linkActive;
+          border-top: 3px solid $liActiceColor;
+          border-bottom: 3px solid $liActiceColor;
+        }
+        &:hover:before
+        {
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          width: 7px;
+          height: 7px;
+          transform: translateX(-50%) rotate(225deg);
+          border-top: 2px solid $linkActive;          
+          border-left: 2px solid $linkActive;
+        }
+        &:hover:after
+        {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          width: 7px;
+          height: 7px;
+          transform: translateX(-50%) rotate(2205deg);
+          border-top: 2px solid $linkActive;          
+          border-left: 2px solid $linkActive;
+        }
+        .dropdown-menu
+        {
+          background-color: $secondMainColor;
+        .dropdown-item
+        {
+          color: $textColor;
+          &:hover
+          {
+            background-color: $linkActive;
+          }
+        }
+        }
+        .nav-link:hover
+        {
+          color: $linkActive;
+        }
+        .active
+        {
+          color: $linkActive;
+        }
+      }
+      .button
+      {
+        padding: 0 30px;
+        background-color: $ButtonColor;
+        color: $buttonTextColor;
+        border-radius: 10px;
+        letter-spacing: 1.2px;
+        &:hover
+        {
+          background-color: $linkActive;
+          text-shadow: 0 0 2px $buttonTextColor;
+        }
+      }
+    }
+  }
+}
+}

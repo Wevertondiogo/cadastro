@@ -1,0 +1,137 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #e6e6e6;
+  border-top: 25px solid #444444;
+}
+h1
+{
+  color:#00a0b1;
+  font-style: italic;
+}
+span
+{
+  color: #8dc1c6;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 550px;
+  height: 410px;
+}
+ul
+{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8dc1c6;
+  width: 100%;
+  height: 50px;
+}
+li
+{
+  list-style: none;
+  color: #fcfdfd;
+  font-size: 28px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+form
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+label
+{
+  color: grey;
+  text-transform: capitalize;
+}
+.form-group
+{
+  position: relative;
+}
+.form-control
+{
+  width: 300px;
+}
+.form-control:focus
+{
+  border: 2px solid #8dc1c6;
+  box-shadow: 0px 0px 10px #8dc1c6;
+}
+.btn
+{
+  width: 120px;
+  border-radius: 7px;
+  background:linear-gradient(45deg, #0070cc,#0057cc);
+  transition: all .3s ease-out;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+.btn:hover
+{
+  background:linear-gradient(45deg,#0057cc,#0070cc);
+  text-shadow: 0 0 10px #fff;
+  color: #fff;
+}
+.linha-vertical
+{
+  height: 410px;
+  border: 2px solid #8dc1c6;
+}
+#mandatorySenha,#mandatoryEmail,#mandatoryNome,#mandatoryLoginEmail,#mandatoryLoginSenha
+{
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+  visibility: visible;
+}
+#invalid
+{
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 5%;
+}
+.error {
+  border-color: red;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  font-style: italic;
+  visibility: visible;
+  position: absolute;
+}
+

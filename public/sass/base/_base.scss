@@ -1,0 +1,22 @@
+@import '../constantes/main';
+
+body
+{
+  background-color: $mainColor;
+   font-family: $mainFont;
+}
+.navbar
+{
+background-color: secondMainColor;
+}
+.card
+{
+  background-color: secondMainColor;
+}
+a,p,h1,h3 {
+  color: $textColor;
+}
+.title,.logo
+{
+  color: $titleColor;
+}

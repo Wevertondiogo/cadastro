@@ -1,0 +1,125 @@
+.section
+{
+  @extend %d-center;
+  margin-top: 90px;
+  height: 70vh;
+  width: 100%;
+  .container
+  {
+    @extend %d-evenly, %d-center;
+  .text--content
+  {
+    &__welcome
+    {
+      letter-spacing: 3px;
+      color: $subTextColor;
+      text-transform: uppercase;
+    }
+    &__name
+    {
+      @extend .text--content__welcome;
+      color: $titleColor;
+      font-weight: bolder;
+    }
+    &__text
+    {
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      line-height: 32px;
+    }
+    .second--button
+    {
+      background-color: $ButtonColor;
+      color: $buttonTextColor;
+      border-radius: 22px;
+      width: 200px;
+      text-transform: uppercase;
+      &:hover
+      {
+        background-color: $linkActive;
+        text-shadow: 0 0 2px $buttonTextColor;
+      }
+    }
+  }
+  .dooplo
+  {
+    @extend %d-center;
+  }
+  }
+}
+// cards
+.card-group
+{
+  .container
+  {
+    @extend %d-between;
+    .card
+    {
+     @extend %d-center;
+     background-color: $secondMainColor;
+     width: 350px;
+     height: 250px;
+     &-body
+     {
+       @extend %d-center;
+     }
+     &-border
+     {
+       @extend %d-center;
+       position: relative;
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+     }
+    }
+  }
+}
+.d-none
+{
+  display: none;
+}
+.height
+{
+  height: 80vh;
+}
+@keyframes animate
+{
+  from{
+    box-shadow: 0 0 5px $balance-scale,
+                0 0 10px $female,
+                0 0 150px $gift;
+  }
+  to{
+     box-shadow: 0 0 150px $balance-scale,
+                0 0 10px $female,
+                0 0 5px $gift;
+  }
+}
+
+@keyframes animate-2
+{
+  from{
+    box-shadow: 0 0 5px $gift,
+                0 0 10px $female,
+                0 0 150px $balance-scale;
+  }
+  to{
+     box-shadow: 0 0 150px $gift,
+                0 0 10px $female,
+                0 0 5px $balance-scale;
+  }
+}
+
+@keyframes animate-3
+{
+  from{
+    box-shadow: 0 0 5px $female,
+                0 0 10px $balance-scale,
+                0 0 150px $gift;
+  }
+  to{
+     box-shadow: 0 0 150px $female,
+                0 0 10px $balance-scale,
+                0 0 5px $gift;
+  }
+}
