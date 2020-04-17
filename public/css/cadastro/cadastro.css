@@ -134,4 +134,12 @@ label
   visibility: visible;
   position: absolute;
 }
+.fa
+{
+  position: absolute;
+  top: 43px;
+  right: 18px;
+  cursor: pointer;
+  color: #0057cc;
+}
 

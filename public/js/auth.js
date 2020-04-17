@@ -21,6 +21,9 @@ const mandatorySenha = q('#mandatorySenha');
 const mandatoryEmail = q('#mandatoryEmail');
 const mandatoryNome = q('#mandatoryNome')
 
+const eyeLoginPassword = q('#eyeLoginPassword')
+const eyeCadastroPassword = q('#eyeCadastroPassword')
+
 // Função De Login
 login.addEventListener('click', () => {
 
@@ -53,7 +56,7 @@ login.addEventListener('click', () => {
     // Funcão de êxito
     firebase.auth().signInWithEmailAndPassword(authEmailInput.value, authPasswordInput.value).then(() => {
       alert('Login efetuado com sucesso')
-      window.location.replace('../public/home.html')
+      window.location.href = '../public/home.html'
       authEmailInput.value = '';
       authPasswordInput.value = '';
     }) // tratando Erro
@@ -110,7 +113,7 @@ cadastro.addEventListener('click', () => {
     //Função de de êxito
     firebase.auth().createUserWithEmailAndPassword(authCadastroEmailInput.value, authCadastroSenhaInput.value).then(() => {
       alert('Você foi cadastrado com sucesso!')
-      window.location.replace('../public/home.html')
+      window.location.href = '../public/home.html'
       nomeInput.value = '';
       authCadastroEmailInput.value = '';
       authCadastroSenhaInput.value = '';
@@ -232,3 +235,49 @@ cadastroBlur.addEventListener('blur', event => {
   }
   removeError(event.target)
 }, true)
+
+
+authPasswordInput.addEventListener('click', () => {
+  eyeLoginPassword.classList.add('fa-eye')
+})
+
+authCadastroSenhaInput.addEventListener('click', () => {
+  eyeCadastroPassword.classList.add('fa-eye')
+})
+// authPasswordInput.addEventListener('blur', () => {
+//   eyeLoginPassword.classList.remove('fa-eye')
+// })
+eyeLoginPassword.addEventListener('click', togglePasswordLogin)
+eyeCadastroPassword.addEventListener('click', togglePasswordCadastro)
+
+function togglePasswordLogin() {
+  switch (authPasswordInput.type) {
+    case 'password':
+      authPasswordInput.type = 'text'
+      eyeLoginPassword.classList.remove('fa-eye')
+      eyeLoginPassword.classList.add('fa-eye-slash')
+      break;
+    case 'text':
+      authPasswordInput.type = 'password'
+      eyeLoginPassword.classList.add('fa-eye')
+      eyeLoginPassword.classList.remove('fa-eye-slash')
+    default:
+      break;
+  }
+}
+
+function togglePasswordCadastro() {
+  switch (authCadastroSenhaInput.type) {
+    case 'password':
+      authCadastroSenhaInput.type = 'text'
+      eyeCadastroPassword.classList.remove('fa-eye')
+      eyeCadastroPassword.classList.add('fa-eye-slash')
+      break;
+    case 'text':
+      authCadastroSenhaInput.type = 'password'
+      eyeCadastroPassword.classList.add('fa-eye')
+      eyeCadastroPassword.classList.remove('fa-eye-slash')
+    default:
+      break;
+  }
+}
