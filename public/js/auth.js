@@ -56,7 +56,7 @@ login.addEventListener('click', () => {
     // Funcão de êxito
     firebase.auth().signInWithEmailAndPassword(authEmailInput.value, authPasswordInput.value).then(() => {
       alert('Login efetuado com sucesso')
-      window.location.href = '../public/home.html'
+      window.location.href = 'https://home-807d3.web.app/'
       authEmailInput.value = '';
       authPasswordInput.value = '';
     }) // tratando Erro
@@ -113,7 +113,7 @@ cadastro.addEventListener('click', () => {
     //Função de de êxito
     firebase.auth().createUserWithEmailAndPassword(authCadastroEmailInput.value, authCadastroSenhaInput.value).then(() => {
       alert('Você foi cadastrado com sucesso!')
-      window.location.href = '../public/home.html'
+      window.location.href = 'https://home-807d3.web.app/'
       nomeInput.value = '';
       authCadastroEmailInput.value = '';
       authCadastroSenhaInput.value = '';
